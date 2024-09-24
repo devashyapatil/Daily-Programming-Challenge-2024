@@ -1,3 +1,4 @@
+import java.util.*;
 class Day15 {
     public static int lengthOfLongestSubstring(String s) {
         if(s.length()==0)
@@ -18,7 +19,7 @@ class Day15 {
                 }
             }
             set.add(s.charAt(i));
-            maxi = Math.max(maxans, i - l + 1);
+            maxi = Math.max(maxi, i - l + 1);
         }
         return maxi;
     }
